@@ -1,0 +1,5 @@
+@import 'npm:@acab/reset.css';
+
+html {
+	color-scheme: only light;
+}

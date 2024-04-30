@@ -1,0 +1,48 @@
+@custom-media --sm (min-width: 576px);
+@custom-media --md (min-width: 768px);
+@custom-media --lg (min-width: 992px);
+@custom-media --xl (min-width: 1200px);
+
+.home {
+	--home-padding-block: 5rem;
+	--home-padding-inline: 1rem;
+	--home-min-width: calc(20em - var(--home-padding-inline) * 2);
+	--home-me-max-width: 25rem;
+	--home-stuff-max-width: 60rem;
+
+	max-width: 108rem;
+	padding-block: var(--home-padding-block);
+	padding-inline: var(--home-padding-inline);
+	margin: auto;
+
+	display: grid;
+	grid-template-columns: minmax(var(--home-min-width), var(--home-me-max-width));
+	grid-auto-rows: auto;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.home-footer {
+	margin-block-start: 5rem;
+	text-align: center;
+}
+
+
+@media (--sm) {
+	.home {
+		--home-padding-inline: 5rem;
+	}
+}
+
+@media (--xl) {
+	.home {
+		grid-template-columns: minmax(var(--home-min-width), var(--home-me-max-width)) minmax(var(--home-min-width), var(--home-stuff-max-width));
+		justify-content: space-between;
+	}
+
+	.home-me {
+		position: sticky;
+		top: var(--home-padding-block);
+		grid-row: span 2;
+	}
+}

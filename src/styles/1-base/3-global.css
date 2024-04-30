@@ -1,0 +1,15 @@
+h1 {
+	font-size: 2.5rem;
+	margin-top: var(--space-lg);
+	margin-bottom: var(--space-lg);
+}
+
+p {
+	margin-top: var(--space-md);
+	margin-bottom: var(--space-md);
+}
+
+iconify-icon {
+	width: 2rem;
+	height: 2rem;
+}

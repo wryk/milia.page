@@ -1,0 +1,7 @@
+.span-row-2 {
+	grid-row: span 2;
+}
+
+.span-col-2 {
+	grid-column: span 2;
+}

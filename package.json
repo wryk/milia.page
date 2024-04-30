@@ -1,0 +1,22 @@
+{
+  "source": "src/index.html",
+  "scripts": {
+    "build": "parcel build",
+    "dev": "parcel"
+  },
+  "dependencies": {
+    "@acab/reset.css": "^0.8.0",
+    "@fontsource-variable/inter": "^5.0.17",
+    "iconify-icon": "^2.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "postcss": "^8.4",
+    "postcss-preset-env": "^9.5.5"
+  },
+  "@parcel/transformer-css": {
+    "drafts": {
+      "customMedia": true
+    }
+  }
+}
