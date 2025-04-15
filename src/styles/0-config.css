@@ -2,11 +2,13 @@
 	--border-radius-small: 0.5rem;
 	--border-radius-large: 1rem;
 
-	--spacer: 1rem;
+	--spacing-base: 1rem;
 
-	--space-xs: calc(var(--spacer) * .25);
-	--space-sm: calc(var(--spacer) * .5);
-	--space-md: var(--spacer);
-	--space-lg: calc(var(--spacer) * 1.5);
-	--space-xl: calc(var(--spacer) * 3);
+	--spacing-xxs: calc(var(--spacing-base) * .25);
+	--spacing-xs: calc(var(--spacing-base) * .5);
+	--spacing-sm: calc(var(--spacing-base) * .75);
+	--spacing-md: var(--spacing-base);
+	--spacing-lg: calc(var(--spacing-base) * 1.25);
+	--spacing-xl: calc(var(--spacing-base) * 1.5);
+	--spacing-xxl: calc(var(--spacing-base) * 1.75);
 }

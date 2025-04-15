@@ -2,17 +2,19 @@
   "source": "src/index.html",
   "scripts": {
     "build": "parcel build",
-    "dev": "parcel"
+    "dev": "parcel",
+    "deploy": "dxfl deploy milia.page dist"
   },
   "dependencies": {
-    "@acab/reset.css": "^0.8.0",
-    "@fontsource-variable/inter": "^5.0.17",
-    "iconify-icon": "^2.1.0"
+    "@acab/reset.css": "^0.11.0",
+    "@fontsource-variable/inter": "^5.2.5",
+    "iconify-icon": "^2.3.0"
   },
   "devDependencies": {
-    "parcel": "^2.12.0",
-    "postcss": "^8.4",
-    "postcss-preset-env": "^9.5.5"
+    "dxfl": "^0.1.5",
+    "parcel": "^2.14.4",
+    "postcss": "^8.5.3",
+    "postcss-preset-env": "^10.1.5"
   },
   "@parcel/transformer-css": {
     "drafts": {

@@ -19,11 +19,15 @@
 	grid-template-columns: minmax(var(--home-min-width), var(--home-me-max-width));
 	grid-auto-rows: auto;
 	gap: 2rem;
+	align-items: start;
 	justify-content: center;
 }
 
 .home-footer {
 	margin-block-start: 5rem;
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xs);
 	text-align: center;
 }
 
