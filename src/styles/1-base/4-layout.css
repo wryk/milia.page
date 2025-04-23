@@ -1,7 +1,8 @@
-@custom-media --sm (min-width: 576px);
+/* Broken wihout reason, has been disabled in lightningcss */
+/* @custom-media --sm (min-width: 576px);
 @custom-media --md (min-width: 768px);
 @custom-media --lg (min-width: 992px);
-@custom-media --xl (min-width: 1200px);
+@custom-media --xl (min-width: 1200px); */
 
 .home {
 	--home-padding-block: 5rem;
@@ -32,13 +33,13 @@
 }
 
 
-@media (--sm) {
+@media (min-width: 576px) {
 	.home {
 		--home-padding-inline: 5rem;
 	}
 }
 
-@media (--xl) {
+@media (min-width: 1200px) {
 	.home {
 		grid-template-columns: minmax(var(--home-min-width), var(--home-me-max-width)) minmax(var(--home-min-width), var(--home-stuff-max-width));
 		justify-content: space-between;
