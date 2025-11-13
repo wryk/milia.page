@@ -2,7 +2,7 @@
   "scripts": {
     "build": "parcel build",
     "dev": "parcel",
-    "deploy": "dxfl deploy milia.page dist"
+    "ship": "parcel build && dxfl deploy milia.page dist"
   },
   "source": [
     "src/index.html",
